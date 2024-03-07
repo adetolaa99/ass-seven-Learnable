@@ -9,18 +9,51 @@ body {
   height: 100vh;
 }
 
-button {
+.button {
   cursor: pointer;
   background-color: teal;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .todo-container {
-  max-width: 400px;
+  max-width: 600px;
   width: 100%;
+  height: 500px;
   background-color: ivory;
-  padding: 20px;
+  padding: 30px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+}
+
+.add-task-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.add-task-container input[type="text"] {
+  border: none;
+  padding: 8px;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.add-task-container button {
+  background-color: teal;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
 #todo-list {
@@ -32,21 +65,18 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 15px;
   border-bottom: 1px solid #eee;
 }
 
 .todo-item input[type="text"] {
   border: none;
-  padding: 5px;
+  padding: 8px;
   flex-grow: 1;
 }
 
 .todo-item button {
   background-color: #ff4d4d;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
   margin-left: 10px;
   cursor: pointer;
 }
